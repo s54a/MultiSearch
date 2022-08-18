@@ -368,7 +368,7 @@ function moneycontrol(){
       window.open("https://www.myntra.com/"+query.value);
     }
   };
-  function drubble(){
+  function dribbble(){
     if(query.value == ""){
       window.open("https://www.dribbble.com/");
     }
