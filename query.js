@@ -314,7 +314,7 @@ function moneycontrol(){
   };
   function MDN(){
     if(query.value == ""){
-      window.open("https://developer.mozilla.org.com/");
+      window.open("https://developer.mozilla.org/");
     }
     else{
       window.open("https://developer.mozilla.org/en-US/search?q="+query.value);
