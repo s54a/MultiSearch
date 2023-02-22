@@ -115,7 +115,7 @@ main{
   transform: translate(-50%,-50%);
 }
 main .second h1{
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 15%;
   margin-bottom: 2rem;
   color: var(--text-color);
@@ -151,7 +151,7 @@ main .second h1{
   color: var(--text-color);
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 button:hover{
   background: var(--hover);
