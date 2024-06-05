@@ -6,6 +6,10 @@ const platforms = {
         url: "https://github.com/search?q=",
       },
       {
+        name: "Stack Overflow",
+        url: "https://stackoverflow.com/search?q=",
+      },
+      {
         name: "LeetCode",
         url: "https://leetcode.com/problemset/all/?search=",
       },
@@ -34,10 +38,6 @@ const platforms = {
         url: "https://codepen.io/your-work?search_term=",
       },
       {
-        name: "StackBlitz",
-        url: "https://www.stackblitz.com",
-      },
-      {
         name: "JSfiddle",
         url: "https://www.jsfiddle.net",
       },
@@ -46,32 +46,8 @@ const platforms = {
         url: "https://www.netlify.com",
       },
       {
-        name: "Freenom",
-        url: "https://www.freenom.com",
-      },
-      {
-        name: "F.C.C",
-        url: "https://www.freecodecamp.org/learn/responsive-web-design/",
-      },
-      {
-        name: "T.O.P",
-        url: "https://www.theodinproject.com/paths",
-      },
-      {
-        name: "Edx CS50",
-        url: "https://www.learning.edx.org/course/course-v1:HarvardX+CS50+X/home",
-      },
-      {
-        name: "AK C++",
-        url: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ",
-      },
-      {
-        name: "GlassDoor",
-        url: "https://www.glassdoor.com",
-      },
-      {
-        name: "Stack Overflow",
-        url: "https://stackoverflow.com/search?q=",
+        name: "Vercel",
+        url: "https://vercel.com",
       },
     ],
     Finance: [
@@ -332,6 +308,10 @@ const platforms = {
       {
         name: "Udemy",
         url: "https://www.udemy.com/courses/search/?q=",
+      },
+      {
+        name: "Edx",
+        url: "https://www.edx.org/",
       },
     ],
     "Productivity Tools": [
