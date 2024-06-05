@@ -1,182 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RJVD1JVK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q6RJVD1JVK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-Q6RJVD1JVK');
-</script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="index.js"></script>
-  <script defer src="query.js"></script>
-  <title>MultiSearch</title>
-</head>
-<body>
-  <header>
-    <nav>
-    <ul class="primary-nav">
-      <li><h1 class="logo">&lt<span class="text">SG</span>&gt</h1></li>
-      <li><a target="_blank" rel="noopener noreferrer" href="!">My Portfolio</a></li>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://www.github.com/GuptaSooraj">Github</a></li>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/_SoorajGupta">Twitter</a></li>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/soorajgupta___/">Instagram</a></li>
-      <li><a target="_blank" href="mailto:soorajgupta00@gmail.com">Email</a></li>
-    </ul>
-  </nav>
-  </header>
-  
-  <main>
-    <section class="first">
-      <div class="margin">
-        <div class="accordion">Programming</div>
-        <div class="panel">
-          <button onclick="github()">Github</button>
-          <button onclick="leetcode()">LeetCode</button>
-          <button><a target="_blank" href="https://www.geeksforgeeks.org">GeekforGeeks</a></button>
-          <button><a target="_blank" href="https://www.w3schools.com">W3Schools</a></button>
-          <button onclick="MDN()">MDN Docs</button>
-          <button><a target="_blank" href="https://www.devdocs.io">DevDocs</a></button>
-          <button onclick="csstricks()">CSS Tricks</button>
-          <button onclick="codepen()">Codepen</button>
-          <button><a target="_blank" href="https://www.stackblitz.com">StackBlitz</a></button>
-          <button><a target="_blank" href="https://www.jsfiddle.net">JSfiddle</a></button>
-          <button><a target="_blank" href="https://www.netlify.com">Netlify</a></button>
-          <button><a target="_blank" href="https://www.freenom.com">Freenom</a></button>
-          <button title="FreeCodeCamp"><a target="_blank" href="https://www.freecodecamp.org/learn/responsive-web-design/">F.C.C</a></button>
-          <button title="The Odin Project"><a target="_blank" href="https://www.theodinproject.com/paths">T.O.P</a></button>
-          <button><a target="_blank" href="https://www.learning.edx.org/course/course-v1:HarvardX+CS50+X/home">Edx CS50</a></button>
-          <button><a target="_blank" href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ" title="Apni Kaksha C++ Playlist">AK C++</a></button>
-          <button><a target="_blank" href="https://www.glassdoor.com">Glassdoor</a></button>
-          <button onclick="stackoverflow()">Stack Overflow</button>
-        </div>
-        <div class="accordion">Finance</div>
-        <div class="panel">
-          <button><a target="_blank" href="https://www.google.com/finance/">Google Finance</a></button>
-          <button onclick="yfinance()">Yahoo Finance</button>
-          <button onclick="tickertape()">TickerTape</button>
-          <button onclick="moneycontrol()">Moneycontrol</button>
-        </div>
-        <div class="accordion">Notes & Organizers</div>
-        <div class="panel">
-          <button><a target="_blank" href="https://www.notion.so">Notion</a></button>
-          <button onclick="evernote()">EverNote</button>
-        </div>
-        <div class="accordion">News & Articles</div>
-        <div class="panel">
-          <button onclick="medium()">Medium</button>
-          <!-- <button onclick="bbc()">BBC</button> -->
-          <!-- <button onclick="nytiems()">NY Times</button> -->
-        </div>
-        <div class="accordion">Podcasts</div>
-        <div class="panel">
-          <button onclick="spotify()">Spotify</button>
-          <button onclick="gpodcasts()">Google Podcasts</button>
-          <button onclick="pocket()">Pocket</button>
-        </div>
-        <div class="accordion">Miscellaneous</div>
-        <div class="panel">
-          <button onclick="pdfdrive()">PDF Drive</button>
-          <button onclick="zlibrary()">Z-library</button>
-          <button><a target="_blank" href="https://www.swagbucks.com"></a></button>
-        </div>
+      gtag("config", "G-Q6RJVD1JVK");
+    </script>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmIj48ZyBpZD0iU1ZHUmVwb19iZ0NhcnJpZXIiIHN0cm9rZS13aWR0aD0iMCI+PC9nPjxnIGlkPSJTVkdSZXBvX3RyYWNlckNhcnJpZXIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9nPjxnIGlkPSJTVkdSZXBvX2ljb25DYXJyaWVyIj4gPGcgaWQ9IkludGVyZmFjZSAvIFNlYXJjaF9NYWduaWZ5aW5nX0dsYXNzIj4gPHBhdGggaWQ9IlZlY3RvciIgZD0iTTE1IDE1TDIxIDIxTTEwIDE3QzYuMTM0MDEgMTcgMyAxMy44NjYgMyAxMEMzIDYuMTM0MDEgNi4xMzQwMSAzIDEwIDNDMTMuODY2IDMgMTcgNi4xMzQwMSAxNyAxMEMxNyAxMy44NjYgMTMuODY2IDE3IDEwIDE3WiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPiA8L2c+IDwvZz48L3N2Zz4="
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MultiSearch</title>
+  </head>
+  <body>
+    <div class="col1"></div>
+    <div class="col2">
+      <h1>MultiSearch</h1>
+      <input type="text" class="search" title="Search field" />
+      <div class="col2Container"></div>
+
+      <div class="githubLink">
+        <a
+          href="https://github.com/s54a/MultiSearch"
+          title="GitHub Repository Link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
       </div>
-    </section>
-    <section class="second">
-      <h1 title="The HomePage you Needed">
-        MultiSearch
-      </h1>
-          <input class="search" id="TextField" name="q" autocomplete="off" tabindex="1">
-          <div class="grid">
-            <button onclick="google()">Google</button>
-            <button onclick="duckduckgo()">DuckDuckGo</button>
-            <button onclick="bing()">Bing</button>
-            <button onclick="yahoo()">Yahoo</button>
-            <button onclick="startpage()">Startpage</button>
-            <button onclick="yt()">YouTube</button>
-            <button onclick="gmail()">Gmail</button>
-            <button onclick="gmaps()" title="Google Maps">G-Maps</button>
-            <button><a target="_blank" href="https://www.google.com/imghp?">G Img Search</a></button>
-            <button onclick="drive()">Drive</button>
-            <button onclick="wiki()">Wikipedia</button>
-            <button onclick="piratebay()">Pirate Bay</button>
-            <button onclick="accuweather()">Accuweather</button>
-            <button><a target="_blank" href="https://www.pinetools.com">Pinetools</a></button>
-            <button><a target="_blank" href="https://www.tool.pdf24.org">PDF24</a></button>
-          </div>
-    </section>
-    <section class="third">
-  <div class="margin">
-    <div class="accordion">Social Media</div>
-    <div class="panel">
-      <button onclick="instagram()">Instagram</button>
-      <button onclick="twitter()">Twitter</button>
-      <button onclick="linkedin()">LinkedIn</button>
-      <button onclick="quora()">Quora</button>
-      <button onclick="reddit()">Reddit</button>
-      <button><a target="_blank" href="https://www.discord.com/channels/@me">Discord</a></button>
-      <button onclick="twitch()">Twitch</button>
-      <button onclick="pinterest()">Pinterst</button>
-      <button><a target="_blank" href="https://www.web.telegram.org/z/">Telegram</a></button>
-      <button><a target="_blank" href="https://www.web.whatsapp.com/">Whatsapp</a></button>
-      <button onclick="facebook()">Facebook</button>
-      <button onclick="vimeo()">Vimeo</button>
-      <button onclick="tumblr()">tumblr</button>
-      <button onclick="vk()">vk</button>
-      <button onclick="tiktok()">TikTok</button>
     </div>
-    <div class="accordion">Shopping</div>
-    <div class="panel">
-      <button onclick="amazon()">Amazon</button>
-      <button onclick="filpkart()">Flipkart</button>
-      <button onclick="myntra()">Myntra</button>
-      <button onclick="ebay()">Ebay</button>
-    </div>
-    <div class="accordion">Design</div>
-    <div class="panel">
-      <button><a target="_blank" href="https://www.canva.com">Canva</a></button>
-      <button onclick="dribbble()">Dribbble</button>
-    </div>
-    <div class="accordion">Search Engines</div>
-    <div class="panel">
-      <button onclick="qwant()">Qwant</button>
-      <button onclick="yandex()">Yandex</button>
-    </div>
-    
-    <div class="accordion">Miscellaneous</div>
-    <div class="panel">
-    
-    </div>
-  </div>
-    </section>
-  </main>
-  <footer>
-    <h1>
-      Sooraj Gupta<span>|</span><div class="button open-button" id="tips">Tips</div>
-    </h1>
-    <dialog class="modal" id="modal">
-      <div class="flex">
-        <h2>Tips</h2>
-        <div class="button close-button">&times;</div>
-      </div>
-      <p>Press / (foreward slash) to start typing. This also work for Google & Youtube's Search Bar</p>
-      <p>Or press Tab to start tyoing in the Search Bar</p>
-      <p>Press Shift + T to open Tips</p>
-      <p>Press Esc to Close tips</p>
-      <p>Few button take you to the HomepPage of Website because they don't have any searchable content</p>
-      <p>All the Button which open the site have the blue color when you hover over them</p>
-      <p>These Buttons are GeekforGeeks, w3schools, Devdocs, stackblitz, jsfiddle, netlify, freenom, FreeCodeCamp, theodinproject, AK C++, Glassdoor, Google Finance, Notion, Google Image Search, Pinetools, PDF24, Discord, Telegram, Whatsapp, Canva</p>
-      <p>FCC is the link for Free Code Camp's Legacy Responsive Web Course</p>
-      <p>TOP is the link for The Odin Project's Path Page</p>
-      <p>AK C++ is the link for Apni Kaksha's C++ Course</p>
-      <p>Feel free to contact me if you have any issue or if you find any issue with MultiSearch</p>
-      <p>Or if you want me add more Search Engines or Websites</p>
-    </dialog>
-  </footer>
-</body>
+    <div class="col3"></div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
