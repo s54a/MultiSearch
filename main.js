@@ -66,9 +66,14 @@ document.addEventListener("keydown", (event) => {
     searchInput.focus();
   } else if (event.key === "Escape") {
     searchInput.blur();
-  } else if (event.key === "Enter") {
+  }
+});
+
+// Event listener for search input box to handle Enter key
+document.querySelector(".search").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
     event.preventDefault(); // Prevent the default form submission
-    const query = searchInput.value;
+    const query = event.target.value;
     const url = `https://www.google.com/search?q=${query}`;
     window.open(url, "_blank");
   }
