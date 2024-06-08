@@ -39,7 +39,8 @@ function generateButtons() {
 
   function createAccordion(category, platformList, column) {
     const accordionWrapper = document.createElement("div");
-    accordionWrapper.classList.add("accordionWrapper");
+    const sanitizedCategory = category.replace(/[^a-zA-Z0-9-_]/g, ""); // Remove characters not acceptable in CSS class syntax
+    accordionWrapper.classList.add("accordionWrapper", sanitizedCategory);
 
     const accordion = document.createElement("div");
     accordion.classList.add("accordion");
