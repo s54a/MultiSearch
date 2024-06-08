@@ -2,16 +2,16 @@ const platforms = {
   col1: {
     Programming: [
       {
-        name: "GeekForGeeks",
-        url: "https://www.geeksforgeeks.org",
-      },
-      {
         name: "W3Schools",
         url: "https://www.w3schools.com",
       },
       {
         name: "MDN Docs",
         url: "https://developer.mozilla.org/en-US/search?q=",
+      },
+      {
+        name: "GeekForGeeks",
+        url: "https://www.geeksforgeeks.org",
       },
       {
         name: "DevDocs",
@@ -188,7 +188,7 @@ const platforms = {
         url: "https://www.foxnews.com/",
       },
       {
-        name: "The Hindu",
+        name: "TheHindu",
         url: "https://www.thehindu.com/",
       },
       {
@@ -223,7 +223,8 @@ const platforms = {
       },
       {
         name: "Z-library",
-        url: "https://1lib.in/s/",
+        // url: "https://1lib.in/s/",
+        url: "https://z-lib.io/",
       },
       {
         name: "Archive.org",
