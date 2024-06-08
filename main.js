@@ -16,8 +16,23 @@ function openURL(baseUrl, queryParam) {
 }
 
 // Function to generate favicon URL
+// function getFaviconUrl(url) {
+//   const domain = new URL(url).hostname;
+//   return `https://www.google.com/s2/favicons?sz=64&domain=${domain}`;
+// }
+
 function getFaviconUrl(url) {
   const domain = new URL(url).hostname;
+  // Fallback for specific cases
+  const fallbackFavicons = {
+    "mail.google.com": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+    "www.evernote.com": "https://www.evernote.com/favicon.ico",
+  };
+
+  if (fallbackFavicons[domain]) {
+    return fallbackFavicons[domain];
+  }
+
   return `https://www.google.com/s2/favicons?sz=64&domain=${domain}`;
 }
 
