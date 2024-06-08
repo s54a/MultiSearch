@@ -57,7 +57,7 @@ const platforms = {
 
     Finance: [
       {
-        name: "Google Finance",
+        name: "GoogleFinance",
         url: "https://www.google.com/finance",
       },
       {
@@ -65,7 +65,7 @@ const platforms = {
         url: "https://www.investopedia.com/search?q=",
       },
       {
-        name: "Yahoo Finance",
+        name: "YahooFinance",
         url: "https://finance.yahoo.com/quote/",
       },
       {
@@ -100,7 +100,7 @@ const platforms = {
         url: "https://www.onenote.com/",
       },
       {
-        name: "Apple Notes",
+        name: "AppleNotes",
         url: "https://www.icloud.com/notes/",
       },
       {
@@ -124,7 +124,7 @@ const platforms = {
         url: "https://thewire.in/",
       },
       {
-        name: "The Quint",
+        name: "TheQuint",
         url: "https://www.thequint.com/",
       },
       {
@@ -136,7 +136,7 @@ const platforms = {
         url: "https://timesofindia.indiatimes.com/",
       },
       {
-        name: "Indian Express",
+        name: "IndianExpress",
         url: "https://indianexpress.com/",
       },
       {
@@ -144,15 +144,15 @@ const platforms = {
         url: "https://www.firstpost.com/",
       },
       {
-        name: "Republic World",
+        name: "RepublicWorld",
         url: "https://www.republicworld.com/",
       },
       {
-        name: "Times Now",
+        name: "TimesNow",
         url: "https://www.timesnownews.com/",
       },
       {
-        name: "Zee News",
+        name: "ZeeNews",
         url: "https://zeenews.india.com/",
       },
       {
@@ -176,7 +176,7 @@ const platforms = {
         url: "https://www.npr.org/",
       },
       {
-        name: "BBC News",
+        name: "BBC",
         url: "https://www.bbc.com/news",
       },
       {
@@ -184,16 +184,16 @@ const platforms = {
         url: "https://www.reuters.com/",
       },
       {
-        name: "Fox News",
+        name: "FoxNews",
         url: "https://www.foxnews.com/",
-      },
-      {
-        name: "WallStreetJournal",
-        url: "https://www.wsj.com/",
       },
       {
         name: "The Hindu",
         url: "https://www.thehindu.com/",
+      },
+      {
+        name: "WallStreetJournal",
+        url: "https://www.wsj.com/",
       },
     ],
 
@@ -207,11 +207,11 @@ const platforms = {
         url: "https://podcasts.google.com/search/",
       },
       {
-        name: "Apple Podcasts",
+        name: "ApplePodcasts",
         url: "https://podcasts.apple.com/us/search?term=",
       },
       {
-        name: "iHeartRadio",
+        name: "iHeart",
         url: "https://www.iheart.com/",
       },
     ],
@@ -356,7 +356,7 @@ const platforms = {
       url: "https://github.com/search?q=",
     },
     {
-      name: "Stack Overflow",
+      name: "StackOverflow",
       url: "https://stackoverflow.com/search?q=",
     },
     {
@@ -497,11 +497,11 @@ const platforms = {
         url: "https://www.netflix.com/search?q=",
       },
       {
-        name: "Amazon Prime",
+        name: "Prime",
         url: "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=",
       },
       {
-        name: "Disney+Hotstar",
+        name: "Hotstar",
         url: "https://www.hotstar.com/in/search?q=",
       },
       {
@@ -537,7 +537,7 @@ const platforms = {
         url: "https://www.hbomax.com/search?q=",
       },
       {
-        name: "Apple TV+",
+        name: "AppleTV+",
         url: "https://tv.apple.com/search?q=",
       },
     ],
@@ -548,6 +548,14 @@ const platforms = {
         url: "https://ocw.mit.edu/index.htm",
       },
       {
+        name: "Udemy",
+        url: "https://www.udemy.com/courses/search/?q=",
+      },
+      {
+        name: "Edx",
+        url: "https://www.edx.org/",
+      },
+      {
         name: "KhanAcademy",
         url: "https://www.khanacademy.org/search?page_search_query=",
       },
@@ -556,34 +564,27 @@ const platforms = {
         url: "https://www.coursera.org/search?query=",
       },
       {
-        name: "Udemy",
-        url: "https://www.udemy.com/courses/search/?q=",
-      },
-      {
-        name: "Duolingo",
-        url: "https://www.duolingo.com",
-      },
-      {
-        name: "Edx",
-        url: "https://www.edx.org/",
+        name: "Udacity",
+        url: "https://www.udacity.com/",
       },
       {
         name: "LinkedInLearning",
         url: "https://www.linkedin.com/learning/",
       },
       {
-        name: "Udacity",
-        url: "https://www.udacity.com/",
+        name: "Duolingo",
+        url: "https://www.duolingo.com",
       },
-      {
-        name: "Codecademy",
-        url: "https://www.codecademy.com/",
-      },
+
+      // {
+      //   name: "Codecademy",
+      //   url: "https://www.codecademy.com",
+      // },
     ],
 
     "Productivity Tools": [
       {
-        name: "Microsoft ToDo",
+        name: "MS ToDo",
         url: "https://to-do.microsoft.com/tasks/",
       },
       {
@@ -626,15 +627,15 @@ const platforms = {
         url: "https://www.strava.com/",
       },
       {
-        name: "Yoga Journal",
+        name: "YogaJournal",
         url: "https://www.yogajournal.com/",
       },
       {
-        name: "Mayo Clinic",
+        name: "MayoClinic",
         url: "https://www.mayoclinic.org/",
       },
       {
-        name: "Verywell Health",
+        name: "VerywellHealth",
         url: "https://www.verywellhealth.com/",
       },
       {
@@ -684,7 +685,7 @@ const platforms = {
 
     "Music & Audio Streaming": [
       {
-        name: "YouTube Music",
+        name: "YouTubeMusic",
         url: "https://music.youtube.com/",
       },
       {
@@ -696,11 +697,11 @@ const platforms = {
         url: "https://soundcloud.com/search?q=",
       },
       {
-        name: "Apple Music",
+        name: "AppleMusic",
         url: "https://music.apple.com/us/search",
       },
       {
-        name: "Amazon Music",
+        name: "AmazonMusic",
         url: "https://music.amazon.com/",
       },
       {

@@ -5,7 +5,20 @@ import platforms from "./platforms";
 function openURL(baseUrl, queryParam) {
   const query = document.querySelector(".search").value;
   const url = query ? `${baseUrl}${queryParam}${query}` : baseUrl;
+  // const openInNewTab = document.getElementById("new-tab-toggle").checked;
+
   window.open(url, "_blank");
+  // if (openInNewTab) {
+  //   window.open(url, "_blank");
+  // } else {
+  //   window.location.href = url;
+  // }
+}
+
+// Function to generate favicon URL
+function getFaviconUrl(url) {
+  const domain = new URL(url).hostname;
+  return `https://www.google.com/s2/favicons?sz=64&domain=${domain}`;
 }
 
 // Function to generate buttons dynamically
@@ -26,11 +39,23 @@ function generateButtons() {
     panel.classList.add("panel");
 
     platformList.forEach((platform) => {
+      const buttonWrapper = document.createElement("div");
+      buttonWrapper.classList.add("buttonWrapper");
+
       const button = document.createElement("button");
-      button.innerText = platform.name;
+
+      const favicon = document.createElement("img");
+      favicon.src = getFaviconUrl(platform.url);
+      favicon.alt = `${platform.name} icon`;
+      favicon.classList.add("favicon");
+
+      button.appendChild(favicon);
+      button.appendChild(document.createTextNode(platform.name));
       button.onclick = () =>
         openURL(platform.url, platform.url.includes("?") ? "" : "?search=");
-      panel.appendChild(button);
+
+      buttonWrapper.appendChild(button);
+      panel.appendChild(buttonWrapper);
     });
 
     accordionWrapper.appendChild(accordion);
@@ -43,11 +68,23 @@ function generateButtons() {
   }
 
   platforms.col2.forEach((platform) => {
+    const buttonWrapper = document.createElement("div");
+    buttonWrapper.classList.add("buttonWrapper");
+
     const button = document.createElement("button");
-    button.innerText = platform.name;
+
+    const favicon = document.createElement("img");
+    favicon.src = getFaviconUrl(platform.url);
+    favicon.alt = `${platform.name} icon`;
+    favicon.classList.add("favicon");
+
+    button.appendChild(favicon);
+    button.appendChild(document.createTextNode(platform.name));
     button.onclick = () =>
       openURL(platform.url, platform.url.includes("?") ? "" : "?search=");
-    col2.appendChild(button);
+
+    buttonWrapper.appendChild(button);
+    col2.appendChild(buttonWrapper);
   });
 
   for (const category in platforms.col3) {
@@ -74,7 +111,8 @@ document.querySelector(".search").addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault(); // Prevent the default form submission
     const query = event.target.value;
-    const url = `https://www.google.com/search?q=${query}`;
-    window.open(url, "_blank");
+    // const url = `https://www.google.com/search?q=${query}`;
+    // window.open(url, "_blank");
+    openURL(`https://www.google.com/search?q=`, query);
   }
 });

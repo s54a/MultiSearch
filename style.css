@@ -52,8 +52,9 @@ body {
 }
 
 .accordionWrapper {
-  margin: 0 0.5rem;
-  padding: 1rem;
+  margin: 1.25rem 1rem;
+  margin-bottom: 0;
+  /* padding: 1rem; */
   padding-bottom: 0;
   border-radius: 0.5rem;
   /* background-color: rgba(255, 255, 255, 0.1); */
@@ -91,15 +92,16 @@ button {
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(255, 255, 255, 0.1);
   /* height: 2.125rem; */
+  width: 100%;
 }
 
 a:hover,
 a:focus,
 button:hover,
 button:focus {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: scale 250ms;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -107,12 +109,17 @@ button:focus {
 .col2Container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1.25rem;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 .search {
   margin: 1.5rem 0;
   width: 75%;
+  width: 98%;
   padding: 0.5rem;
   font-size: 1rem;
   border: none;
@@ -144,6 +151,7 @@ h1 {
 
 .githubLink a {
   padding: 0;
+  background-color: transparent;
 }
 
 .githubLink a:hover,
@@ -151,4 +159,9 @@ h1 {
   transform: scale(1);
   background-color: transparent;
   color: dodgerblue;
+}
+
+.favicon {
+  margin-right: 5px;
+  width: 1rem;
 }
