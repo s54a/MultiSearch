@@ -7,11 +7,13 @@ const platforms = {
       },
       {
         name: "MDN Docs",
-        url: "https://developer.mozilla.org/en-US/search?q=",
+        url: "https://developer.mozilla.org",
+        queryParam: "/en-US/search?q=",
       },
       {
         name: "GeekForGeeks",
         url: "https://www.geeksforgeeks.org",
+        queryParam: "/search?q=",
       },
       {
         name: "DevDocs",
@@ -19,11 +21,13 @@ const platforms = {
       },
       {
         name: "CSS Tricks",
-        url: "https://css-tricks.com/?s=",
+        url: "https://css-tricks.com",
+        queryParam: "/?s=",
       },
       {
         name: "Codepen",
-        url: "https://codepen.io/your-work?search_term=",
+        url: "https://codepen.io",
+        queryParam: "/your-work?search_term=",
       },
       {
         name: "JSfiddle",
@@ -35,7 +39,8 @@ const platforms = {
       },
       {
         name: "StackExchange",
-        url: "https://stackexchange.com/search?q=",
+        url: "https://stackexchange.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Netlify",
@@ -58,27 +63,33 @@ const platforms = {
     Finance: [
       {
         name: "GoogleFinance",
-        url: "https://www.google.com/finance",
+        url: "https://www.google.com/finance/",
       },
       {
         name: "Investopedia",
-        url: "https://www.investopedia.com/search?q=",
+        url: "https://www.investopedia.com",
+        queryParam: "/search?q=",
       },
       {
         name: "YahooFinance",
-        url: "https://finance.yahoo.com/quote/",
+        url: "https://finance.yahoo.com",
+        queryParam: "/quote/",
       },
       {
         name: "Moneycontrol",
-        url: "https://www.moneycontrol.com/stocks/cptmarket/compsearchnew.php?search_data=&cid=&mbsearch_str=&topsearch_type=1&search_str=",
+        url: "https://www.moneycontrol.com",
+        queryParam:
+          "/stocks/cptmarket/compsearchnew.php?search_data=&cid=&mbsearch_str=&topsearch_type=1&search_str=",
       },
       {
         name: "TickerTape",
-        url: "https://www.tickertape.in/?q=",
+        url: "https://www.tickertape.in",
+        queryParam: "/?q=",
       },
       {
         name: "TradingView",
-        url: "https://www.tradingview.com/search/",
+        url: "https://www.tradingview.com",
+        queryParam: "/search/",
       },
     ],
 
@@ -89,7 +100,9 @@ const platforms = {
       },
       {
         name: "Evernote",
-        url: "https://www.evernote.com/client/web?login=true#?n=f20a4cce-0ede-d5dc-61f3-a49593ad1c0f&query=view%3ASE%1E",
+        url: "https://www.evernote.com/client/web",
+        queryParam:
+          "?login=true#?n=f20a4cce-0ede-d5dc-61f3-a49593ad1c0f&query=view%3ASE%1E",
       },
       {
         name: "Google Keep",
@@ -116,7 +129,8 @@ const platforms = {
     "News & Articles": [
       {
         name: "Medium",
-        url: "https://medium.com/search?q=",
+        url: "https://medium.com",
+        queryParam: "/search?q=",
       },
 
       {
@@ -200,15 +214,18 @@ const platforms = {
     Podcasts: [
       {
         name: "Spotify",
-        url: "https://open.spotify.com/search/",
+        url: "https://open.spotify.com",
+        queryParam: "/search/",
       },
       {
         name: "GooglePodcasts",
-        url: "https://podcasts.google.com/search/",
+        url: "https://podcasts.google.com",
+        queryParam: "/search/",
       },
       {
         name: "ApplePodcasts",
-        url: "https://podcasts.apple.com/us/search?term=",
+        url: "https://podcasts.apple.com",
+        queryParam: "/us/search?term=",
       },
       {
         name: "iHeart",
@@ -219,51 +236,60 @@ const platforms = {
     Miscellaneous: [
       {
         name: "PDF Drive",
-        url: "https://www.pdfdrive.com/search?q=",
+        url: "https://www.pdfdrive.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Z-library",
-        // url: "https://1lib.in/s/",
         url: "https://z-lib.io/",
       },
       {
         name: "Archive.org",
-        url: "https://archive.org/search.php?query=",
+        url: "https://archive.org",
+        queryParam: "/search.php?query=",
       },
     ],
 
-    "Social Media": [
+    SocialMedia: [
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com",
+        queryParam: "/",
       },
       {
         name: "Twitter",
-        url: "https://twitter.com/search?q=",
+        url: "https://twitter.com",
+        queryParam: "/search?q=",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/search/results/all/?keywords=",
+        url: "https://www.linkedin.com",
+        queryParam: "/search/results/all/?keywords=",
       },
       {
         name: "Discord",
-        url: "https://www.discord.com/channels/@me",
+        url: "https://www.discord.com",
+        queryParam: "/channels/@me",
       },
       {
         name: "Twitch",
-        url: "https://www.twitch.tv/search?term=",
+        url: "https://www.twitch.tv",
+        queryParam: "/search?term=",
       },
       {
         name: "Telegram",
-        url: "https://web.telegram.org/z/",
+        url: "https://web.telegram.org",
+        queryParam: "/z/",
       },
       {
         name: "Facebook",
-        url: "https://www.facebook.com/search/top/?q=",
+        url: "https://www.facebook.com",
+        queryParam: "/search/top/?q=",
       },
       {
         name: "Tumblr",
-        url: "https://www.tumblr.com/search/",
+        url: "https://www.tumblr.com",
+        queryParam: "/search/",
       },
       {
         name: "VK",
@@ -275,106 +301,132 @@ const platforms = {
       },
       {
         name: "Vimeo",
-        url: "https://vimeo.com/search?q=",
+        url: "https://vimeo.com",
+        queryParam: "/search?q=",
       },
       {
         name: "TikTok",
-        url: "https://www.tiktok.com/search?q=",
+        url: "https://www.tiktok.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Snapchat",
-        url: "https://www.snapchat.com/add/",
+        url: "https://www.snapchat.com",
+        queryParam: "/add/",
       },
       {
         name: "Pinterest",
-        url: "https://in.pinterest.com/search/pins/?q=",
+        url: "https://in.pinterest.com",
+        queryParam: "/search/pins/?q=",
       },
       {
         name: "IMDb",
-        url: "https://www.imdb.com/find?q=",
+        url: "https://www.imdb.com",
+        queryParam: "/find?q=",
       },
       {
         name: "GoodReads",
-        url: "https://www.goodreads.com/search?q=",
+        url: "https://www.goodreads.com",
+        queryParam: "/search?q=",
       },
     ],
   },
+
   col2: [
     {
       name: "Google",
-      url: "https://www.google.com/search?q=",
+      url: "https://www.google.com",
+      queryParam: "/search?q=",
     },
     {
       name: "DuckDuckGo",
-      url: "https://duckduckgo.com/?q=",
+      url: "https://duckduckgo.com",
+      queryParam: "/?q=",
     },
     {
       name: "Bing",
-      url: "https://www.bing.com/search?q=",
+      url: "https://www.bing.com",
+      queryParam: "/search?q=",
     },
     {
       name: "Startpage",
-      url: "https://startpage.com/do/search?q=",
+      url: "https://www.startpage.com/",
+      queryParam: "/do/search?q=",
     },
     {
       name: "YouTube",
-      url: "https://www.youtube.com/results?search_query=",
+      url: "https://www.youtube.com",
+      queryParam: "/results?search_query=",
     },
     {
       name: "Gmail",
-      url: "https://mail.google.com/mail/u/0/#search/",
+      url: "https://mail.google.com/mail/u/0/#search",
+      queryParam: "/",
     },
     {
       name: "Google Maps",
-      url: "https://www.google.com/maps/search/",
+      url: "https://www.google.com/maps/",
+      queryParam: "search/",
     },
     {
       name: "Drive",
-      url: "https://drive.google.com/drive/search?q=",
+      url: "https://drive.google.com",
+      queryParam: "/drive/search?q=",
     },
     {
       name: "Wikipedia",
-      url: "https://en.wikipedia.org/w/index.php?search=",
+      url: "https://en.wikipedia.org",
+      queryParam: "/w/index.php?search=",
     },
     {
       name: "Pirate Bay",
-      url: "https://thepiratebay.party/s/?q=",
+      url: "https://thepiratebay.party",
+      queryParam: "/s/?q=",
     },
     {
       name: "Accuweather",
-      url: "https://www.accuweather.com/en/search-locations?query=",
+      url: "https://www.accuweather.com",
+      queryParam: "/en/search-locations?query=",
     },
     {
       name: "WolframAlpha",
-      url: "https://www.wolframalpha.com/input/?i=",
+      url: "https://www.wolframalpha.com",
+      queryParam: "/input/?i=",
     },
     {
       name: "Hacker News",
-      url: "https://hn.algolia.com/?q=some",
+      url: "https://hn.algolia.com",
+      queryParam: "/?q=",
     },
     {
       name: "Github",
-      url: "https://github.com/search?q=",
+      url: "https://github.com",
+      queryParam: "/search?q=",
     },
     {
       name: "StackOverflow",
-      url: "https://stackoverflow.com/search?q=",
+      url: "https://stackoverflow.com",
+      queryParam: "/search?q=",
     },
     {
       name: "LeetCode",
-      url: "https://leetcode.com/problemset/all/?search=",
+      url: "https://leetcode.com",
+      queryParam: "/problemset/all/?search=",
     },
     {
       name: "Quora",
-      url: "https://www.quora.com/search?q=",
+      url: "https://www.quora.com",
+      queryParam: "/search?q=",
     },
     {
       name: "Reddit",
-      url: "https://www.reddit.com/search/?q=",
+      url: "https://www.reddit.com",
+      queryParam: "/search/?q=",
     },
     {
       name: "Twitter",
-      url: "https://twitter.com/search?q=",
+      url: "https://twitter.com",
+      queryParam: "/search?q=",
     },
   ],
 
@@ -382,47 +434,60 @@ const platforms = {
     Shopping: [
       {
         name: "Amazon",
-        url: "http://www.amazon.in/s?k=",
+        url: "http://www.amazon.in",
+        queryParam: "/s?k=",
       },
       {
         name: "Flipkart",
-        url: "https://www.flipkart.com/search?q=",
+        url: "https://www.flipkart.com",
+        queryParam: "/search?q=",
       },
       {
         name: "AliExpress",
-        url: "https://www.aliexpress.com/wholesale?SearchText=",
+        url: "https://www.aliexpress.com",
+        queryParam: "/wholesale?SearchText=",
       },
       {
         name: "Myntra",
         url: "https://www.myntra.com",
+        queryParam: "/fsa?rawQuery=",
       },
       {
         name: "eBay",
         url: "https://www.ebay.com",
+        queryParam:
+          "/sch/i.html?_from=R40&_nkw=shirts&_sacat=0&_odkw=adsffds&_osacat=0",
       },
       {
         name: "Walmart",
         url: "https://www.walmart.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Target",
         url: "https://www.target.com",
+        url: "https://www.target.com",
+        queryParam: "/s?searchTerm=",
       },
       {
         name: "Ajio",
         url: "https://www.ajio.com",
+        queryParam: "/s/",
       },
       {
         name: "Nykaa",
         url: "https://www.nykaa.com",
+        queryParam: "/search/result/?q=",
       },
       {
         name: "BigBasket",
         url: "https://www.bigbasket.com",
+        queryParam: "/ps/?q=",
       },
       {
-        name: "Grofers",
-        url: "https://grofers.com",
+        name: "Blinkit",
+        url: "https://blinkit.com",
+        queryParam: "/s/?q=",
       },
     ],
 
@@ -433,113 +498,132 @@ const platforms = {
       },
       {
         name: "Dribbble",
-        url: "https://dribbble.com/search/",
+        url: "https://dribbble.com",
+        queryParam: "/search/",
       },
       {
         name: "Behance",
-        url: "https://www.behance.net/",
+        url: "https://www.behance.net",
       },
       {
         name: "Figma",
-        url: "https://www.figma.com/",
+        url: "https://www.figma.com",
       },
       {
         name: "Sketch",
-        url: "https://www.sketch.com/",
+        url: "https://www.sketch.com",
       },
       {
         name: "InVision",
-        url: "https://www.invisionapp.com/",
+        url: "https://www.invisionapp.com",
       },
       {
         name: "Adobe Color",
-        url: "https://color.adobe.com/",
+        url: "https://color.adobe.com",
       },
       {
         name: "Unsplash",
-        url: "https://unsplash.com/",
+        url: "https://unsplash.com",
       },
       {
         name: "Freepik",
-        url: "https://www.freepik.com/",
+        url: "https://www.freepik.com",
       },
     ],
 
     "Search Engines": [
       {
         name: "Qwant",
-        url: "https://www.qwant.com/?l=en&q=",
+        url: "https://www.qwant.com",
+        queryParam: "/?l=en&q=",
       },
       {
         name: "Yandex",
-        url: "https://yandex.com/search/?text=",
+        url: "https://yandex.com",
+        queryParam: "/search/?text=",
       },
       {
         name: "Brave Search",
-        url: "https://search.brave.com/search?q=",
+        url: "https://search.brave.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Ecosia",
-        url: "https://www.ecosia.org/search?method=index&q=",
+        url: "https://www.ecosia.org",
+        queryParam: "/search?method=index&q=",
       },
       {
         name: "Yahoo",
-        url: "https://in.search.yahoo.com/search?p=",
+        url: "https://in.search.yahoo.com",
+        queryParam: "/search?p=",
       },
     ],
 
     "Video Streaming": [
       {
         name: "YouTube",
-        url: "https://www.youtube.com/results?search_query=",
+        url: "https://www.youtube.com",
+        queryParam: "/results?search_query=",
       },
       {
         name: "Netflix",
-        url: "https://www.netflix.com/search?q=",
+        url: "https://www.netflix.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Prime",
-        url: "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=",
+        url: "https://www.primevideo.com",
+        queryParam: "/search/ref=atv_nb_sr?phrase=",
       },
       {
         name: "Hotstar",
-        url: "https://www.hotstar.com/in/search?q=",
+        url: "https://www.hotstar.com",
+        queryParam: "/in/search?q=",
       },
       {
         name: "ZEE5",
-        url: "https://www.zee5.com/movies?query=",
+        url: "https://www.zee5.com",
+        queryParam: "/movies?query=",
       },
       {
         name: "SonyLIV",
-        url: "https://www.sonyliv.com/search?query=",
+        url: "https://www.sonyliv.com",
+        queryParam: "/search?query=",
       },
       {
         name: "Voot",
-        url: "https://www.voot.com/search?q=",
+        url: "https://www.voot.com",
+        queryParam: "/search?q=",
       },
       {
         name: "MX Player",
-        url: "https://www.mxplayer.in/search/all?query=",
+        url: "https://www.mxplayer.in",
+        queryParam: "/search/all?query=",
       },
       {
         name: "JioCinema",
-        url: "https://www.jiocinema.com/search?q=",
+        url: "https://www.jiocinema.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Disney+",
-        url: "https://www.disneyplus.com/search?q=",
+        url: "https://www.disneyplus.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Hulu",
-        url: "https://www.hulu.com/search?q=",
+        url: "https://www.hulu.com",
+        queryParam: "/search?q=",
       },
       {
         name: "HBO Max",
-        url: "https://www.hbomax.com/search?q=",
+        url: "https://www.hbomax.com",
+        queryParam: "/search?q=",
       },
       {
         name: "AppleTV+",
-        url: "https://tv.apple.com/search?q=",
+        url: "https://tv.apple.com",
+        queryParam: "/search?q=",
       },
     ],
 
@@ -550,51 +634,50 @@ const platforms = {
       },
       {
         name: "Udemy",
-        url: "https://www.udemy.com/courses/search/?q=",
+        url: "https://www.udemy.com",
+        queryParam: "/courses/search/?q=",
       },
       {
         name: "Edx",
-        url: "https://www.edx.org/",
+        url: "https://www.edx.org",
       },
       {
         name: "KhanAcademy",
-        url: "https://www.khanacademy.org/search?page_search_query=",
+        url: "https://www.khanacademy.org",
+        queryParam: "/search?page_search_query=",
       },
       {
         name: "Coursera",
-        url: "https://www.coursera.org/search?query=",
+        url: "https://www.coursera.org",
+        queryParam: "/search?query=",
       },
       {
         name: "Udacity",
-        url: "https://www.udacity.com/",
+        url: "https://www.udacity.com",
       },
       {
         name: "LinkedInLearning",
-        url: "https://www.linkedin.com/learning/",
+        url: "https://www.linkedin.com/learning",
       },
       {
         name: "Duolingo",
         url: "https://www.duolingo.com",
       },
-
-      // {
-      //   name: "Codecademy",
-      //   url: "https://www.codecademy.com",
-      // },
     ],
 
     "Productivity Tools": [
       {
         name: "MS ToDo",
-        url: "https://to-do.microsoft.com/tasks/",
+        url: "https://to-do.microsoft.com/tasks",
       },
       {
         name: "Trello",
-        url: "https://trello.com/search?q=",
+        url: "https://trello.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Asana",
-        url: "https://app.asana.com/0/search/",
+        url: "https://app.asana.com/0/search",
       },
       {
         name: "Todoist",
@@ -613,35 +696,37 @@ const platforms = {
     "Health & Fitness": [
       {
         name: "MyFitnessPal",
-        url: "https://www.myfitnesspal.com/",
+        url: "https://www.myfitnesspal.com",
       },
       {
         name: "Healthline",
-        url: "https://www.healthline.com/search?q=",
+        url: "https://www.healthline.com",
+        queryParam: "/search?q=",
       },
       {
         name: "WebMD",
-        url: "https://www.webmd.com/search/search_results/default.aspx?query=",
+        url: "https://www.webmd.com/search/search_results/default.aspx",
+        queryParam: "?query=",
       },
       {
         name: "Strava",
-        url: "https://www.strava.com/",
+        url: "https://www.strava.com",
       },
       {
         name: "YogaJournal",
-        url: "https://www.yogajournal.com/",
+        url: "https://www.yogajournal.com",
       },
       {
         name: "MayoClinic",
-        url: "https://www.mayoclinic.org/",
+        url: "https://www.mayoclinic.org",
       },
       {
         name: "VerywellHealth",
-        url: "https://www.verywellhealth.com/",
+        url: "https://www.verywellhealth.com",
       },
       {
         name: "Livestrong",
-        url: "https://www.livestrong.com/",
+        url: "https://www.livestrong.com",
       },
     ],
 
@@ -652,46 +737,47 @@ const platforms = {
       },
       {
         name: "Airbnb",
-        url: "https://www.airbnb.com/s/",
+        url: "https://www.airbnb.com/s",
       },
       {
         name: "TripAdvisor",
-        url: "https://www.tripadvisor.com/Search?q=",
+        url: "https://www.tripadvisor.com/Search",
+        queryParam: "?q=",
       },
       {
         name: "Expedia",
-        url: "https://www.expedia.com/",
+        url: "https://www.expedia.com",
       },
       {
         name: "Hotels.com",
-        url: "https://www.hotels.com/",
+        url: "https://www.hotels.com",
       },
       {
         name: "Agoda",
-        url: "https://www.agoda.com/",
+        url: "https://www.agoda.com",
       },
       {
         name: "Kayak",
-        url: "https://www.kayak.com/",
+        url: "https://www.kayak.com",
       },
       {
         name: "Trivago",
-        url: "https://www.trivago.com/",
+        url: "https://www.trivago.com",
       },
       {
         name: "Hostelworld",
-        url: "https://www.hostelworld.com/",
+        url: "https://www.hostelworld.com",
       },
     ],
 
     "Music & Audio Streaming": [
       {
         name: "YouTubeMusic",
-        url: "https://music.youtube.com/",
+        url: "https://music.youtube.com",
       },
       {
         name: "Spotify",
-        url: "https://open.spotify.com/search/",
+        url: "https://open.spotify.com/search",
       },
       {
         name: "SoundCloud",
@@ -703,15 +789,15 @@ const platforms = {
       },
       {
         name: "AmazonMusic",
-        url: "https://music.amazon.com/",
+        url: "https://music.amazon.com",
       },
       {
         name: "Tidal",
-        url: "https://listen.tidal.com/",
+        url: "https://listen.tidal.com",
       },
       {
         name: "Deezer",
-        url: "https://www.deezer.com/",
+        url: "https://www.deezer.com",
       },
     ],
   },

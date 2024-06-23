@@ -2,12 +2,18 @@ import "./style.css";
 import platforms from "./platforms";
 
 // Function to handle search and open URL
-function openURL(baseUrl, queryParam) {
-  const query = document.querySelector(".search").value;
-  const url = query ? `${baseUrl}${queryParam}${query}` : baseUrl;
-  // const openInNewTab = document.getElementById("new-tab-toggle").checked;
+function openURL(baseUrl, queryParam = "", query = "") {
+  let url;
+
+  if (query && queryParam) {
+    url = `${baseUrl}${queryParam}${query}`;
+  } else {
+    url = baseUrl;
+  }
 
   window.open(url, "_blank");
+
+  // const openInNewTab = document.getElementById("new-tab-toggle").checked;
   // if (openInNewTab) {
   //   window.open(url, "_blank");
   // } else {
@@ -16,26 +22,55 @@ function openURL(baseUrl, queryParam) {
 }
 
 function getFaviconUrl(url) {
-  const domain = new URL(url).hostname;
+  const domain = url;
+  const faviconUrl = `https://www.google.com/s2/favicons?sz=64&domain=${domain}`;
+
   // Fallback for specific cases
-  const fallbackFavicons = {
-    "mail.google.com": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-    "www.evernote.com": "https://www.evernote.com/favicon.ico",
-    "maps.google.com": "https://maps.google.com/favicon.ico",
+  const fallbackFavIcons = {
+    "https://mail.google.com/mail/u/0/#search":
+      "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+    "https://www.evernote.com/client/web":
+      "https://www.evernote.com/favicon.ico",
+    "https://www.google.com/maps/":
+      "https://www.svgrepo.com/show/375444/google-maps-platform.svg",
+    "https://www.google.com/finance/":
+      "https://cdn-1.webcatalog.io/catalog/google-finance/google-finance-icon-filled-256.webp?v=1714773071984",
   };
 
-  if (fallbackFavicons[domain]) {
-    return fallbackFavicons[domain];
+  if (fallbackFavIcons[domain]) {
+    return fallbackFavIcons[domain];
+  } else {
+    return faviconUrl;
   }
-
-  return `https://www.google.com/s2/favicons?sz=64&domain=${domain}`;
 }
 
-// Function to generate buttons dynamically
 function generateButtons() {
   const col1 = document.querySelector(".col1");
   const col2 = document.querySelector(".col2Container");
   const col3 = document.querySelector(".col3");
+
+  function createButton(platform) {
+    const buttonWrapper = document.createElement("div");
+    buttonWrapper.classList.add("buttonWrapper");
+
+    const button = document.createElement("button");
+
+    const favicon = document.createElement("img");
+    favicon.src = getFaviconUrl(platform.url);
+    favicon.alt = `${platform.name} icon`;
+    favicon.classList.add("favicon");
+
+    button.appendChild(favicon);
+    button.appendChild(document.createTextNode(platform.name));
+
+    button.onclick = () => {
+      const query = document.querySelector(".search").value;
+      openURL(platform.url, platform.queryParam, query);
+    };
+
+    buttonWrapper.appendChild(button);
+    return buttonWrapper;
+  }
 
   function createAccordion(category, platformList, column) {
     const accordionWrapper = document.createElement("div");
@@ -50,22 +85,7 @@ function generateButtons() {
     panel.classList.add("panel");
 
     platformList.forEach((platform) => {
-      const buttonWrapper = document.createElement("div");
-      buttonWrapper.classList.add("buttonWrapper");
-
-      const button = document.createElement("button");
-
-      const favicon = document.createElement("img");
-      favicon.src = getFaviconUrl(platform.url);
-      favicon.alt = `${platform.name} icon`;
-      favicon.classList.add("favicon");
-
-      button.appendChild(favicon);
-      button.appendChild(document.createTextNode(platform.name));
-      button.onclick = () =>
-        openURL(platform.url, platform.url.includes("?") ? "" : "?search=");
-
-      buttonWrapper.appendChild(button);
+      const buttonWrapper = createButton(platform);
       panel.appendChild(buttonWrapper);
     });
 
@@ -78,25 +98,12 @@ function generateButtons() {
     createAccordion(category, platforms.col1[category], col1);
   }
 
-  platforms.col2.forEach((platform) => {
-    const buttonWrapper = document.createElement("div");
-    buttonWrapper.classList.add("buttonWrapper");
-
-    const button = document.createElement("button");
-
-    const favicon = document.createElement("img");
-    favicon.src = getFaviconUrl(platform.url);
-    favicon.alt = `${platform.name} icon`;
-    favicon.classList.add("favicon");
-
-    button.appendChild(favicon);
-    button.appendChild(document.createTextNode(platform.name));
-    button.onclick = () =>
-      openURL(platform.url, platform.url.includes("?") ? "" : "?search=");
-
-    buttonWrapper.appendChild(button);
-    col2.appendChild(buttonWrapper);
-  });
+  if (platforms.col2) {
+    platforms.col2.forEach((platform) => {
+      const buttonWrapper = createButton(platform);
+      col2.appendChild(buttonWrapper);
+    });
+  }
 
   for (const category in platforms.col3) {
     createAccordion(category, platforms.col3[category], col3);
@@ -122,8 +129,6 @@ document.querySelector(".search").addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault(); // Prevent the default form submission
     const query = event.target.value;
-    // const url = `https://www.google.com/search?q=${query}`;
-    // window.open(url, "_blank");
     openURL(`https://www.google.com/search?q=`, query);
   }
 });
