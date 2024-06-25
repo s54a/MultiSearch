@@ -524,6 +524,7 @@ const platforms = {
       {
         name: "Unsplash",
         url: "https://unsplash.com",
+        queryParam: "/s/photos/",
       },
       {
         name: "Freepik",

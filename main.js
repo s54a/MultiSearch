@@ -63,10 +63,17 @@ function generateButtons() {
     button.appendChild(favicon);
     button.appendChild(document.createTextNode(platform.name));
 
-    button.onclick = () => {
-      const query = document.querySelector(".search").value;
-      openURL(platform.url, platform.queryParam, query);
-    };
+    if (platform.queryParam) {
+      button.onclick = () => {
+        const query = document.querySelector(".search").value;
+        openURL(platform.url, platform.queryParam, query);
+      };
+    } else {
+      button.classList.add("unsearchable");
+      button.onclick = () => {
+        openURL(platform.url);
+      };
+    }
 
     buttonWrapper.appendChild(button);
     return buttonWrapper;
