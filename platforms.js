@@ -13,7 +13,6 @@ const platforms = {
       {
         name: "GeekForGeeks",
         url: "https://www.geeksforgeeks.org",
-        queryParam: "/search?q=",
       },
       {
         name: "DevDocs",
@@ -56,7 +55,8 @@ const platforms = {
       },
       {
         name: "Dev.To",
-        url: "https://dev.to/",
+        url: "https://dev.to",
+        queryParam: "/search?utf8=%E2%9C%93&q=",
       },
     ],
 
@@ -89,7 +89,7 @@ const platforms = {
       {
         name: "TradingView",
         url: "https://www.tradingview.com",
-        queryParam: "/search/",
+        queryParam: "/chart/?symbol=",
       },
     ],
 
@@ -279,7 +279,6 @@ const platforms = {
       {
         name: "Telegram",
         url: "https://web.telegram.org",
-        queryParam: "/z/",
       },
       {
         name: "Facebook",
@@ -455,8 +454,7 @@ const platforms = {
       {
         name: "eBay",
         url: "https://www.ebay.com",
-        queryParam:
-          "/sch/i.html?_from=R40&_nkw=shirts&_sacat=0&_odkw=adsffds&_osacat=0",
+        queryParam: "/sch/i.html?_from=R40&_nkw=",
       },
       {
         name: "Walmart",
@@ -472,7 +470,7 @@ const platforms = {
       {
         name: "Ajio",
         url: "https://www.ajio.com",
-        queryParam: "/s/",
+        queryParam: "/search/?text=",
       },
       {
         name: "Nykaa",
@@ -528,7 +526,7 @@ const platforms = {
       },
       {
         name: "Freepik",
-        url: "https://www.freepik.com",
+        url: "https://www.freepik.com/",
       },
     ],
 
@@ -579,12 +577,12 @@ const platforms = {
       {
         name: "Hotstar",
         url: "https://www.hotstar.com",
-        queryParam: "/in/search?q=",
+        queryParam: "/in/search?search_query=",
       },
       {
         name: "ZEE5",
         url: "https://www.zee5.com",
-        queryParam: "/movies?query=",
+        queryParam: "/search?q=",
       },
       {
         name: "SonyLIV",
@@ -599,7 +597,7 @@ const platforms = {
       {
         name: "MX Player",
         url: "https://www.mxplayer.in",
-        queryParam: "/search/all?query=",
+        queryParam: "/?search=true&q=",
       },
       {
         name: "JioCinema",
@@ -624,7 +622,7 @@ const platforms = {
       {
         name: "AppleTV+",
         url: "https://tv.apple.com",
-        queryParam: "/search?q=",
+        queryParam: "/search?term=",
       },
     ],
 
@@ -674,7 +672,7 @@ const platforms = {
       {
         name: "Trello",
         url: "https://trello.com",
-        queryParam: "/search?q=",
+        // queryParam: "/search?q=",
       },
       {
         name: "Asana",
@@ -706,8 +704,8 @@ const platforms = {
       },
       {
         name: "WebMD",
-        url: "https://www.webmd.com/search/search_results/default.aspx",
-        queryParam: "?query=",
+        url: "https://www.webmd.com",
+        queryParam: "/search?query=",
       },
       {
         name: "Strava",
@@ -775,18 +773,22 @@ const platforms = {
       {
         name: "YouTubeMusic",
         url: "https://music.youtube.com",
+        queryParam: "/search?q=",
       },
       {
         name: "Spotify",
-        url: "https://open.spotify.com/search",
+        url: "https://open.spotify.com",
+        queryParam: "/search/",
       },
       {
         name: "SoundCloud",
-        url: "https://soundcloud.com/search?q=",
+        url: "https://soundcloud.com",
+        queryParam: "/search?q=",
       },
       {
         name: "AppleMusic",
-        url: "https://music.apple.com/us/search",
+        url: "https://music.apple.com",
+        queryParam: "/us/search?term=",
       },
       {
         name: "AmazonMusic",
