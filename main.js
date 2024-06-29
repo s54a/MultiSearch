@@ -136,6 +136,6 @@ document.querySelector(".search").addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault(); // Prevent the default form submission
     const query = event.target.value;
-    openURL(`https://www.google.com/search?q=`, query);
+    openURL(`https://www.google.com`, "/search?q=", query);
   }
 });
