@@ -35,6 +35,27 @@ MultiSearch is a web application that allows users to search multiple websites (
 
 Contributions are welcome! Please submit pull requests to contribute.
 
+## Star History
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=s54a/multisearch&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=s54a/multisearch&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=s54a/multisearch&type=Date"
+  />
+</picture>
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
